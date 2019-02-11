@@ -33,11 +33,6 @@ function isEvery(collection, key, value, defaultValue) {
  * @class ResultCollection
  */
 export default ArrayProxy.extend({
-  init() {
-    set(this, 'content', emberArray(compact(get(this, 'content'))));
-    this._super(...arguments);
-  },
-
   /**
    * The attribute that this collection belongs to
    *
